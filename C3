@@ -1,0 +1,19 @@
+var input = "0011111"
+
+var arr = Array.from(input)
+var answer = 0
+
+for(var i = 0; i < arr.length; i++) {
+    if(Number(arr[i]) == 1) {
+        answer += Math.pow(2, (arr.length - 1 - i))
+    }
+}
+
+var arr8 = Array.from(answer.toString())
+var answer8 = ""
+var md
+for(var i = arr8.length - 1; i >= 0; i--) {
+    md = Math.floor((answer / Math.pow(8,i)) % 8)
+    answer8 += md
+}
+console.log(answer8)
