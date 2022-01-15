@@ -1,0 +1,15 @@
+function gcd(max: number, min: number): any {
+    max = max % min
+    if(max === 0){
+        return min
+    }
+    else {
+        return gcd(min, max)
+    }
+}
+
+const integer = [11,32]
+
+var lcm = (integer[0] * integer[1]) / gcd(integer[0], integer[1])
+
+console.log("最小公倍數: " + lcm)
