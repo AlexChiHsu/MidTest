@@ -1,0 +1,15 @@
+const integer = [545, -845, 154, 0, -15]
+
+var total = 0
+
+for(var i = 0; i < 5; i++) {
+    total += integer[i]       
+}
+
+var ave = total / 5.0 + ''
+var rs = ave.indexOf('.')
+
+if(ave.length - rs === 2) {
+    ave += '0'
+}
+console.log("平均值: " + ave)
