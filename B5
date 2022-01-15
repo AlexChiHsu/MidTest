@@ -1,0 +1,19 @@
+var input = 16
+var count = 0
+
+if(input % 2 != 0) {
+    for(var i = 3; i < input; i+=2) {
+        if(input % i == 0) {
+            count = 1
+        }        
+    }
+    if(count == 1) {
+        console.log("不是質數")
+    }
+    else {
+        console.log("是質數")
+    }
+}
+else {
+    console.log("不是質數")
+}
