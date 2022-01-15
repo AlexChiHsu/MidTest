@@ -1,0 +1,12 @@
+for(var i = 0; i < 7; i++) {
+    var buffer = ""
+    for(var j = 6; j >= 0; j--) {
+        if(j == i || j == 0 || i == 6) {
+            buffer += "*"
+        }
+        else {
+            buffer += " "
+        }
+    } 
+     console.log(buffer)
+}
