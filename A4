@@ -1,0 +1,12 @@
+const integer = [545, -845, 9523, 0, -15]
+
+var max = integer[0]
+
+var i = 4
+while(i >= 0) {
+    if(max < integer[i]) {
+        max = integer[i]
+    }
+    i--
+}
+console.log("最大值: " + max)
