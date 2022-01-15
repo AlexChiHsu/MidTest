@@ -1,0 +1,16 @@
+const input = 6920
+
+switch(input) {
+    case 6731:
+        console.log("程式設計")
+        break
+    case 6920:
+        console.log("程式設計實習")
+        break
+    case 7268:
+        console.log("程式語言")
+        break
+    default:
+        console.log("輸入錯誤")
+        break
+}
