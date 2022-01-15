@@ -1,0 +1,22 @@
+var input = "69669"
+
+var arr = Array.from(input)
+var output = 0
+var j = 4
+for(var i = 0; i < 5 / 2; i++) {
+   if(arr[i] == arr[j]) {
+       output++
+   }
+   else {
+       output = 0
+       break
+   }
+   j--
+}
+
+if(output != 0) {
+    console.log("是")
+}
+else {
+    console.log("否")
+}
