@@ -1,0 +1,9 @@
+var input = 9
+var count = 1
+for(var i = 0; i <= input / 2; i++) {
+    if(input % i == 0) {
+        count++
+        console.log(i + "*" + (input / i))
+    }
+}
+console.log("個數: " + count)
