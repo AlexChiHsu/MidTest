@@ -1,0 +1,13 @@
+var a = 5
+var b = 12
+var c = 13
+
+if(a + b < c || a + c < b || b + c < a) {
+    console.log("不是三角形")
+}
+else if(a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+    console.log("是")
+}
+else {
+    console.log("否")
+}
