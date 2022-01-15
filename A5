@@ -1,0 +1,10 @@
+const integer = [545, -845, 9523, 0, -15]
+
+var total = 0
+
+var i = 4
+while(i >= 0) {
+    total += integer[i]
+    i--
+}
+console.log("總和: " + total)
