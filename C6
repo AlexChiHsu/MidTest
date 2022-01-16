@@ -1,0 +1,23 @@
+var row = 10
+
+for(var i = 0; i < row; i++) {
+    var buffer = ""
+    for(var j = 0; j < (2 * row - 1) / 2; j++) {
+        if(j >= i) {
+            buffer += "*"
+        }
+        else {
+            buffer += " "
+        }
+    }
+
+    for(var k = ((2 * row - 1) / 2) - 1; k > 0; k--) {
+        if(k > i) {
+            buffer += "*"
+        }
+        else {
+            buffer += " "
+        }
+    }
+    console.log(buffer)
+}
