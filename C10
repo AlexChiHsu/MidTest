@@ -1,0 +1,60 @@
+var input = 3
+
+switch(input) {
+    case 1:
+        for(var i = 0; i < 7; i++) {
+            var buffer = ""
+            for(var j = 0; j < 7; j++) {
+                if(j <= i) {
+                    buffer += "*"
+                }
+                else {
+                    buffer += " "
+                }
+            }
+            console.log(buffer)
+        }
+        break
+    case 2:
+        for(var i = 0; i < 7; i++) {
+            var buffer = ""
+            for(var j = 6; j >= 0; j--) {
+                if(j >= i) {
+                    buffer += "*"
+                }
+                else {
+                    buffer += " "
+                }
+            }
+            console.log(buffer)
+        }
+        break
+    case 3:
+        for(var i = 0; i < 7; i++) {
+            var buffer = ""
+            for(var j = 6; j >= 0; j--) {
+                if(j <= i) {
+                    buffer += "*"
+                }
+                else {
+                    buffer += " "
+                }
+            }
+            console.log(buffer)
+        }
+        break
+    case 4:
+        for(var i = 0; i < 7; i++) {
+                var buffer = ""
+                for(var j = 0; j < 7; j++) {
+                    if(j >= i) {
+                        buffer += "*"
+                    }
+                    else {
+                        buffer += " "
+                    }
+                }
+                console.log(buffer)
+        }
+        break
+}
