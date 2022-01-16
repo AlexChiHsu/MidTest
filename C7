@@ -1,0 +1,16 @@
+var pi = 0
+var j = 1
+for(var i = 0; i < 50; i++) {
+    
+    if(i % 2 == 0){
+        pi += 4 / j 
+        console.log(4 + " / " + j)
+    }
+    else {
+        pi -= 4 / j
+        console.log("-" + 4 + " / " + j)
+    }      
+    j += 2    
+}
+
+console.log(pi)
