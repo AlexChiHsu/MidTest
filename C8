@@ -1,0 +1,16 @@
+var fx = 1
+var j = 1
+for(var i = 0; i < 50; i++) {
+    
+    if(i == 0) {
+        fx = 1
+        console.log("fx = " + fx)
+    }
+    else {
+        fx += i / j
+        console.log(i + " / " + j)
+    }    
+    j ++    
+}
+
+console.log(fx)
