@@ -1,0 +1,17 @@
+var input = "14089036"
+
+var arr = Array.from(input)
+var new_arr = []
+var total = 0
+var value = 1
+for(var i = 0; i < 8; i++) {
+    if(Number(arr[i]) == 0) {
+        new_arr[i] = 0
+        value *= -1
+    }
+    else {
+        new_arr[i] = 10 - Number(arr[i])
+        total += new_arr[i] * value
+    }
+}
+console.log(total)
