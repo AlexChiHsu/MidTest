@@ -1,0 +1,34 @@
+var answer = 9289
+var answer_arr = Array.from(answer.toString())
+var guess = 5819
+var guess_arr = Array.from(guess.toString())
+var countA = 0
+var countB = 0
+
+for(var i = 0; i < 4; i++) {
+    for(var j = 3; j > i; j--) {
+        if(answer_arr[j] == answer_arr[i]) {
+            answer_arr[j] = (Number(answer_arr[i]) + 1) % 10 + ''
+        }
+    }
+}
+
+for(var i = 0; i < 4; i++) {
+    for(var j = 0; j < 4; j++) {
+        if(answer_arr[i] == guess_arr[j]) {
+            if(i == j) {
+                countA++
+            }
+            else {
+                countB++
+            }
+        }
+    }
+}
+if(countA == 4) {
+    console.log("恭喜答對")
+}
+else {
+    console.log(countA + "A" + countB + "B")
+}
+
