@@ -1,0 +1,21 @@
+var input = 2648
+
+var arr = Array.from(input.toString())
+var new_arr = []
+var answer
+for(var i = 0; i < 4; i++) {
+    answer = Number(arr[i])
+    answer = (answer + 6) % 10
+    arr[i] = answer + ''
+    for(var j = 3 - i; j == 3 - i; j++) {
+        
+    }
+}
+
+for(var i = 3; i >= 0; i--) {
+    for(var j = 3 - i; j == 3 - i; j++) {
+        new_arr[j] = arr[i]
+    }
+}
+
+console.log(new_arr)
