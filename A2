@@ -1,13 +1,13 @@
-const integer = [545, -845, 154, 0, -15]
+const integer: number[] = [545, -845, 154, 0, -15]
 
-var total = 0
+let total = 0
 
-for(var i = 0; i < 5; i++) {
+for(let i = 0; i < 5; i++) {
     total += integer[i]       
 }
 
-var ave = total / 5.0 + ''
-var rs = ave.indexOf('.')
+let ave = total / 5.0 + ''
+const rs = ave.indexOf('.')
 
 if(ave.length - rs === 2) {
     ave += '0'
