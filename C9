@@ -1,10 +1,10 @@
-var input = "14089036"
+const input = "14089036"
 
-var arr = Array.from(input)
-var new_arr = []
-var total = 0
-var value = 1
-for(var i = 0; i < 8; i++) {
+const arr = Array.from(input)
+let new_arr = []
+let total = 0
+let value = 1
+for(let i = 0; i < 8; i++) {
     if(Number(arr[i]) == 0) {
         new_arr[i] = 0
         value *= -1
