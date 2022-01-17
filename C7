@@ -1,6 +1,6 @@
-var pi = 0
-var j = 1
-for(var i = 0; i < 50; i++) {
+let pi = 0
+let j = 1
+for(let i = 0; i < 50; i++) {
     
     if(i % 2 == 0){
         pi += 4 / j 
