@@ -1,10 +1,10 @@
-var input = "69669"
+const input = "69669"
 
-var arr = Array.from(input)
-var output = 0
-var j = 4
-for(var i = 0; i < 5 / 2; i++) {
-   if(arr[i] == arr[j]) {
+const arr = Array.from(input)
+let output = 0
+let j = 4
+for(let i = 0; i < 5 / 2; i++) {
+   if(arr[i] === arr[j]) {
        output++
    }
    else {
@@ -14,7 +14,7 @@ for(var i = 0; i < 5 / 2; i++) {
    j--
 }
 
-if(output != 0) {
+if(output !== 0) {
     console.log("是")
 }
 else {
