@@ -1,12 +1,17 @@
-const integer = [545, -845, 9523, 0, -15]
+const integer: number[] = [545, -845, 0, 888, -15]
 
-var max = integer[0]
+let max = integer[0]
 
-var i = 4
-while(i >= 0) {
-    if(max < integer[i]) {
+
+for(let i = 0; i < 5; i++) {
+    if(integer[i] !== 0){
+        if(max < integer[i]) {
         max = integer[i]
+        }
     }
-    i--
+    else {
+        break
+    }
+    
 }
 console.log("最大值: " + max)
