@@ -1,7 +1,7 @@
-var input = "0912345678"
+const input = "0912345678"
 
-var arr = Array.from(input)
-var output = ""
+const arr = Array.from(input)
+let output = ""
 for(var i = 0; i < arr.length; i++) {
    if(i == 3 || i == 6) {
        arr[i] += '-'
