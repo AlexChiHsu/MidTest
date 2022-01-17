@@ -1,4 +1,4 @@
-function gcd(max: number, min: number): any {
+function gcd(max: number, min: number): number {
     max = max % min
     if(max === 0){
         return min
@@ -8,8 +8,8 @@ function gcd(max: number, min: number): any {
     }
 }
 
-const integer = [11,32]
+const integer: number[] = [11,32]
 
-var lcm = (integer[0] * integer[1]) / gcd(integer[0], integer[1])
+const lcm: number = (integer[0] * integer[1]) / gcd(integer[0], integer[1])
 
 console.log("最小公倍數: " + lcm)
