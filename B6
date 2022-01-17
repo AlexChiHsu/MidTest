@@ -1,10 +1,15 @@
-for(var i = 1; i < 10; i++) {
-    for(var j = 2; j < 6; j++) {
+let output = ""
+let cul = "\n"
+for(let i = 1; i < 10; i++) {
+    for(let j = 2; j < 6; j++) {
         if(i * j < 10) {
-            console.log(j + "*" + i + "=" + " " + (i * j) + " ")
+            output += j + "*" + i + "=" + " " + (i*j) + " |"            
         }
         else {
-            console.log(j + "*" + i + "=" + (i * j) + " ")
+            output += j + "*" + i + "=" + " " + (i*j) + "|"
         }
     }
+    output += cul
 }
+
+console.log("\n" + output)
