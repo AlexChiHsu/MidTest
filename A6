@@ -1,5 +1,5 @@
 const input = 59
-const socure =  input / 10
+const socure =  Number(input / 10)
 
 switch(socure) {
     case 10:
