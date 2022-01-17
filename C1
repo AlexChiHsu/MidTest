@@ -1,9 +1,9 @@
-var input = 11101010
+const input = 11101010
 
-var arr = Array.from(input.toString())
-var answer = 0
+const arr = Array.from(input.toString())
+let answer = 0
 
-for(var i = 0; i < arr.length; i++) {
+for(let i = 0; i < arr.length; i++) {
     if(Number(arr[i]) == 1) {
         answer += Math.pow(2, (arr.length - 1 - i))
     }
