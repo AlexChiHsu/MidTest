@@ -1,6 +1,6 @@
-for(var i = 0; i < 7; i++) {
-    var buffer = ""
-    for(var j = 0; j < 7; j++) {
+for(let i = 0; i < 7; i++) {
+    let buffer = ""
+    for(let j = 0; j < 7; j++) {
         if(j == i || i == 0 || j == 6) {
             buffer += "*"
         }
