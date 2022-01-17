@@ -1,19 +1,14 @@
-var input = 16
-var count = 0
+const input = 16
 
-if(input % 2 != 0) {
-    for(var i = 3; i < input; i+=2) {
-        if(input % i == 0) {
-            count = 1
-        }        
-    }
-    if(count == 1) {
-        console.log("不是質數")
-    }
-    else {
-        console.log("是質數")
+const isPrimeNumber = (a: number): any => {
+    for(let i = 2; i <= a - 1; i++) {
+        if(a % i === 0) {
+            return `不是質數`
+        }
+        else {
+            return `是質數`
+        }
     }
 }
-else {
-    console.log("不是質數")
-}
+
+console.log(isPrimeNumber(input))
