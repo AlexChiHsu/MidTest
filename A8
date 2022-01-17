@@ -1,13 +1,27 @@
-var a = 5
-var b = 12
-var c = 13
+let a = 3
+let b = 4
+let c = 5
+const isRightTriangle = (a: number, b: number, c: number) => {
+    if(
+        a + b > c ||
+        a + c > b ||
+        b + c > a
+        ) {
+            if(
+                a * a + b * b === c * c ||
+                a * a + c * c === b * b ||
+                b * b + c * c === a * a
+            ) {
+                    return "是直角三角形"
+                }
+            else {
+                return "不是直角三角形"
+            }
+        }
+    else {
+        return "不是三角形"
+    }
+    
+}
 
-if(a + b < c || a + c < b || b + c < a) {
-    console.log("不是三角形")
-}
-else if(a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
-    console.log("是")
-}
-else {
-    console.log("否")
-}
+console.log(isRightTriangle(a, b, c))
