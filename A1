@@ -1,9 +1,9 @@
-const integer = [545, -845, 9523, 0, -15]
+const integer: number[] = [545, -845, 9523, 0, -15]
 
-var max = integer[0]
-var min = integer[0]
+let max = integer[0]
+let min = integer[0]
 
-for(var i = 0; i < 5; i++) {
+for(let i = 0; i < 5; i++) {
     
     if(max < integer[i]) {
         max = integer[i]
