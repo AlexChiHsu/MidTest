@@ -1,17 +1,17 @@
-const integer: number[] = [545, -845, 0, 888, -15]
+const integer: number[] = [842, 12, 7458, 154, 45678]
 
 let max = integer[0]
 
 
 for(let i = 0; i < 5; i++) {
     if(integer[i] !== 0){
-        if(max < integer[i]) {
-        max = integer[i]
+        if((max < integer[i]) && (max = integer[i])) {
         }
     }
-    else {
+    else {    
         break
     }
     
 }
+
 console.log("最大值: " + max)
